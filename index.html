@@ -1,0 +1,105 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>MILEPHARMA</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topo">
+
+<h1>MILEPHARMA</h1>
+
+<input type="text" placeholder="Buscar medicamentos..." class="busca">
+
+</header>
+
+<nav class="menu">
+
+<a href="#">Início</a>
+<a href="#">Medicamentos</a>
+<a href="#">Vitaminas</a>
+<a href="#">Higiene</a>
+<a href="#">Contato</a>
+
+</nav>
+
+<section class="produtos">
+
+<div class="produto">
+<h3>Dipirona 500mg</h3>
+<p>R$ 12.50</p>
+<button onclick="adicionar('Dipirona',12.50)">Adicionar</button>
+</div>
+
+<div class="produto">
+<h3>Paracetamol 750mg</h3>
+<p>R$ 9.90</p>
+<button onclick="adicionar('Paracetamol',9.90)">Adicionar</button>
+</div>
+
+<div class="produto">
+<h3>Ibuprofeno 600mg</h3>
+<p>R$ 15.00</p>
+<button onclick="adicionar('Ibuprofeno',15.00)">Adicionar</button>
+</div>
+
+<div class="produto">
+<h3>Vitamina C</h3>
+<p>R$ 18.00</p>
+<button onclick="adicionar('Vitamina C',18.00)">Adicionar</button>
+</div>
+
+<div class="produto">
+<h3>Álcool 70%</h3>
+<p>R$ 7.50</p>
+<button onclick="adicionar('Alcool',7.50)">Adicionar</button>
+</div>
+
+<div class="produto">
+<h3>Band-Aid</h3>
+<p>R$ 10.00</p>
+<button onclick="adicionar('BandAid',10)">Adicionar</button>
+</div>
+
+<div class="produto">
+<h3>Omeprazol</h3>
+<p>R$ 22.00</p>
+<button onclick="adicionar('Omeprazol',22)">Adicionar</button>
+</div>
+
+<div class="produto">
+<h3>Antialérgico</h3>
+<p>R$ 16.00</p>
+<button onclick="adicionar('Antialergico',16)">Adicionar</button>
+</div>
+
+</section>
+
+<section class="carrinho">
+
+<h2>🛒 Carrinho</h2>
+
+<ul id="lista"></ul>
+
+<h3>Total: R$ <span id="total">0</span></h3>
+
+<button onclick="finalizar()">Finalizar Compra</button>
+<button onclick="limpar()">Limpar</button>
+
+</section>
+
+<footer>
+
+<p>MILEPHARMA • Cuidando da sua saúde</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
